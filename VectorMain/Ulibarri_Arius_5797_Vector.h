@@ -1,8 +1,6 @@
 // Adopted from M.A. Weiss, DSACC++ textbook
 // by KV, AY 2020/21, for CSE 2020
 
-// Hello world!
-
 #ifndef VECTOR_H
 #define VECTOR_H
 
