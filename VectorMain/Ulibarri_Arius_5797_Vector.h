@@ -111,7 +111,7 @@ public:
 
 	reverse_iterator rbegin()
 	{
-		return &data[size()];
+		return &data[size()-1];
 	}
 
 	const_reverse_iterator rbegin() const
@@ -266,18 +266,20 @@ public:
 		return;
 	}
 
-	// Erases a value at a specific index
-	void erase(int index)
+	// Erases a value at a specific index (now with ops counter!)
+	void erase(int index, int& ops)
 	{
 		assert(index >= 0 && index < theSize);
 		if (index == theSize - 1)
 		{
 			pop_back();
+			ops++;
 			return;
 		}
 		for (int i = index + 1; i < theSize; i++)
 		{
 			data[i - 1] = data[i];
+			ops++;
 		}
 
 		pop_back();
