@@ -286,7 +286,7 @@ public:
 		return;
 	}
 
-	// Erases a value at a specific index (now with ops counter!)
+	// Erases a value at a specific index
 	void erase(iterator itr)
 	{
 		assert(itr >= begin() && itr < end());
