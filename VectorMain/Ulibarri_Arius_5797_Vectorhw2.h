@@ -245,7 +245,7 @@ public:
 		return;
 	}
 
-	// Inserts a value at a specific iterator
+	// Inserts a value at an index or iterator (pointer)
 	void insert(iterator itr, T value)
 	{
 		if (itr == end())
@@ -286,7 +286,7 @@ public:
 		return;
 	}
 
-	// Erases a value at a specific index
+	// Erases a value at index or iterator (pointer)
 	void erase(iterator itr)
 	{
 		assert(itr >= begin() && itr < end());
